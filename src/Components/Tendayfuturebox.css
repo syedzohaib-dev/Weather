@@ -1,0 +1,55 @@
+.tenDayFuturebox {
+    min-width: 50px;
+    height: 80px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.FutureDay {
+    width: 100%;
+    height: 20px;
+    font-size: 0.75rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.seasonIcon {
+    width: 100%;
+    height: 25px;
+    text-align: center;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seasonIcon p {
+    margin: 0;
+    padding: 0;
+
+}
+
+.predict {
+    width: 100%;
+    height: 10px;
+    text-align: center;
+    font-size: 0.65rem;
+    color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.futureTempreture {
+    width: 100%;
+    height: 25px;
+    text-align: center;
+    font-size: 0.85rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}

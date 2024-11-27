@@ -1,0 +1,66 @@
+.todayDataDiv {
+    width: 100%;
+    height: 170px;
+    /* border: 1px solid black; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+
+.todayDataDiv p {
+    margin: 0;
+    padding: 0;
+}
+
+.city {
+    width: 100%;
+    height: 30px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.2rem;
+    
+}
+.city p{
+    outline-offset: 1px;
+    outline-color: black;
+}
+
+.tempreture {
+    width: 100%;
+    height: 90px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    color: white;
+    /* font-weight: 100; */
+}
+
+.season {
+    width: 100%;
+    height: 25px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    font-weight: bold;
+}
+
+.hl {
+    width: 100%;
+    height: 25px;
+    /* border: 1px solid black; */
+    display: flex;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    font-weight: bold;
+    gap: 10px;
+}

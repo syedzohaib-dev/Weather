@@ -1,30 +1,99 @@
 .mobileDiv {
-    width: 22%;
-    height: 85vh;
+    width: 280px;
+    height: 90vh;
     border: 8px solid black;
     border-radius: 40px;
     overflow: hidden;
     position: relative;
+
 }
 
 .mobileDiv video {
-     width: 100%;
+    /* width: 100%;
     height: 100%;
     object-fit: cover;
-    /* z-index: -1;  */
-    /* position: absolute;
+    z-index: -1; */
+    position: absolute;
     top: 0;
-    bottom: 0;
     left: 0;
-    right: 0; */
-    /* transform: translate(-50%, -50%); */
-  
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     z-index: -1;
 }
 
 .topNotch {
-    width: 30px;
+    width: 100%;
+    height: 15px;
+    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+
+.cemera {
+    width: 100px;
     height: 15px;
     background-color: black;
-    z-index: ;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 5px;
+
+}
+
+.sensor1 {
+    width: 5px;
+    height: 5px;
+    background: #a0a0a0;
+    border-radius: 50%;
+}
+
+.sensor2 {
+    width: 20px;
+    height: 5px;
+    background: #a0a0a0;
+    border-radius: 10px;
+}
+
+.mobileData {
+    width: 100%;
+    height: 95%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mobileDataInput {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.mobileDataInput input {
+    width: 90%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    font-weight: bold;
+
+    &::placeholder {
+        font-weight: bold;
+    }
+
+    &:active {
+        border-inline: 2px solid black;
+        border-radius: 20px;
+    }
 }
