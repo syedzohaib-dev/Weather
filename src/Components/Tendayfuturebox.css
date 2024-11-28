@@ -1,11 +1,12 @@
 .tenDayFuturebox {
     min-width: 50px;
-    height: 80px;
+    height: 85px;
     /* border: 1px solid black; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    cursor: pointer;
 }
 
 .FutureDay {

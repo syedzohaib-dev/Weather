@@ -1,0 +1,49 @@
+.weeklyScheduleRowDiv {
+    width: 100%;
+    min-height: 30px;
+    /* border: 1px solid black; */
+    display: flex;
+    overflow: hidden;
+}
+
+.scheduleDay {
+    width: 30%;
+    height: 30px;
+    /* border: 1px solid black; */
+    font-size: 0.85rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.scheduleIcon {
+    width: 20%;
+    height: 30px;
+    /* border: 1px solid black; */
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.scheduleIcon p {
+    margin: 0;
+    padding: 0;
+}
+
+.scheduleRange {
+    width: 50%;
+    height: 30px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.secondP {
+    font-weight: bold;
+}

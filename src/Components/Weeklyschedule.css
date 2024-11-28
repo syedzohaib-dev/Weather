@@ -1,0 +1,43 @@
+.weeklyScheduleDiv {
+    width: 95%;
+    height: 190px;
+    /* border: 1px solid black; */
+    margin-inline: auto;
+    border-radius: 10px;
+    /* background: transparent; */
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: white;
+    /* opacity: 0.8; */
+    overflow: hidden;
+
+
+}
+
+.tenDayFrocastp {
+    width: 100%;
+    height: 30px;
+    /* border: 1px solid black; */
+    text-align: left;
+    font-size: 0.65rem;
+    padding-left: 10px;
+    /* font-weight: bold; */
+    color: #ffffff;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.weeklyScheduleBottom {
+    width: 100%;
+    height: 160px;
+    /* border: 1px solid black; */
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    overflow: hidden;
+    flex-direction: column;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}

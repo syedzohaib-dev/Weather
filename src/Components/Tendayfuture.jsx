@@ -21,10 +21,6 @@ function Tendayfuture() {
                     <Tendayfuturebox />
                     <Tendayfuturebox />
                     <Tendayfuturebox />
-                
-                   
-
-
                 </div>
             </div>
 
