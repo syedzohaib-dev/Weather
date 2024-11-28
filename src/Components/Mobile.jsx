@@ -19,7 +19,7 @@ function Mobile() {
         <>
             <div className="mobileDiv">
                 <div className="topNotch"><div className="cemera"><div className="sensor1"></div><div className="sensor2"></div></div></div>
-                <video /*autoPlay*/ muted loop src="/videos/rain.mp4"></video >
+                <video autoPlay muted loop src="/videos/clear.mp4"></video >
                 <div className="mobileDataInput">
                     <input type="text" placeholder='Enter City' name="" id="" />
                 </div>

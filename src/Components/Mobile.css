@@ -1,12 +1,11 @@
 .mobileDiv {
-    width: 280px;
+    width: 330px;
     height: 90vh;
     border: 8px solid black;
     border-radius: 40px;
     overflow: hidden;
     position: relative;
-
-}
+    box-shadow: 15px 5px 18px 4px rgba(1,1,1,0.4);}
 
 .mobileDiv video {
     /* width: 100%;
@@ -90,6 +89,7 @@
 
     &::placeholder {
         font-weight: bold;
+        color: black;
     }
 
     &:active {
