@@ -2,22 +2,18 @@ import React from 'react'
 import "./Weeklyschedule.css"
 import Weeklyschedulerow from './Weeklyschedulerow'
 
-function Weeklyschedule() {
+function Weeklyschedule({ forcastData }) {
     return (
         <>
             <div className="weeklyScheduleDiv">
-                <div className="tenDayFrocastp"><p>&#9783; 10-DAY FORECAST</p></div>
+                <div className="tenDayFrocastp"><p>&#9783; 16-DAY FORECAST</p></div>
                 <div className="weeklyScheduleBottom">
-                    <Weeklyschedulerow />
-                    <Weeklyschedulerow />
-                    <Weeklyschedulerow />
-                    <Weeklyschedulerow />
-                    <Weeklyschedulerow />
-                    <Weeklyschedulerow />
-                    <Weeklyschedulerow />
-                    <Weeklyschedulerow />
-                    <Weeklyschedulerow />
-                    <Weeklyschedulerow />
+                    {forcastData?.list.map((item, index) => (
+                        <Weeklyschedulerow  index={index} item={item} />
+                    ))
+                    }
+
+
                 </div>
             </div>
 
