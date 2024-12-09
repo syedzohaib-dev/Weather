@@ -25,15 +25,11 @@ function Mobile() {
     // -----------------------------------
 
     const forcastDatacall = async () => {
-        const res = await fetch(`https://pro.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=19077b1cae9e9a1914ed3565a69a19e7`)
+        const res = await fetch(`https://pro.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=19077b1cae9e9a1914ed3565a69a19e7&units=metric`)
         const data = await res.json()
         console.log("ten day future data", data)
         setFrocastdata(data)
     }
-
-
-
-
 
     // -----------------------------------
 

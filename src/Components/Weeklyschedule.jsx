@@ -9,7 +9,7 @@ function Weeklyschedule({ forcastData }) {
                 <div className="tenDayFrocastp"><p>&#9783; 16-DAY FORECAST</p></div>
                 <div className="weeklyScheduleBottom">
                     {forcastData?.list.map((item, index) => (
-                        <Weeklyschedulerow  index={index} item={item} />
+                        <Weeklyschedulerow key={index} index={index} item={item} />
                     ))
                     }
 

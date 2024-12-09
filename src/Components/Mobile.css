@@ -109,5 +109,15 @@
     border-radius: 50%;
     padding: 2px;
     margin-left: 10px;
-    animation:animateDown infinite 2s;
+    animation: animateDown infinite 2s;
+}
+
+
+@media (min-width: 120px) and (max-width: 767px) {
+    .mobileDiv {
+        width: 100%;
+        height: 100vh;
+        border-radius: 0;
+        border: none;
+    }
 }

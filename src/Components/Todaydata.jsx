@@ -20,8 +20,8 @@ function Todaydata({ currentWeatherData }) {
                 <div className="tempreture"><p>{Math.round(currentWeatherData?.main.temp)}<sup>&#xb0;</sup></p></div>
                 <div className="season"><p>{currentWeatherData.weather[0].main}</p></div>
                 <div className="hl">
-                    <p>H:{currentWeatherData?.main.temp_max}<sup>&#xb0;</sup></p>
-                    <p>L:{currentWeatherData?.main.temp_max}<sup>&#xb0;</sup></p>
+                    <p>H:{Math.round(currentWeatherData?.main.temp_min)}<sup>&#xb0;</sup></p>
+                    <p>L:{Math.round(currentWeatherData?.main.temp_max)}<sup>&#xb0;</sup></p>
                 </div>
             </div>
 

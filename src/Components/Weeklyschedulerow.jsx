@@ -18,17 +18,17 @@ function Weeklyschedulerow({ item, index }) {
                                 (<img src='/images/raincloud.png' width={30} />) : ("no data")
                                     &&
                                     item.weather[0].main === "Snow" ?
-                                    (<img src='/images/snow.png' width={30} />) : ("no data")
+                                    (<img src='/images/snow.png' width={20} />) : ("no data")
                 }
                 </div>
 
                 <div className="scheduleRange">
-                    <p>22 <sup>&#xb0;</sup></p>
-                    <p className='secondP'>36 <sup>&#xb0;</sup></p>
+                    <p>{Math.round(item.main.temp_min)} <sup>&#xb0;</sup></p>
+                    <p className='secondP'>{Math.round(item.main.temp_max)}<sup>&#xb0;</sup></p>
                 </div>
-
             </div>
         </>
+
     )
 }
 
