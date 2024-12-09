@@ -2,11 +2,19 @@ import React from 'react'
 import "./Weeklyschedulerow.css"
 
 function Weeklyschedulerow({ item, index }) {
-    // console.log(item, index, "weekly schudle row")
+
+    const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+    // const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+
     return (
         <>
             <div className="weeklyScheduleRowDiv" key={index}>
-                <div className="scheduleDay"><p>{new Date(item.dt_txt).getDate()}</p></div>
+                <div className="scheduleDay"><p>{new Date(item.dt_txt).getDate()} -
+                    {months[new Date(item.dt_txt).getMonth()]}  -
+                    || {new Date(item.dt * 1000).getHours()}
+                    {new Date(item.dt * 1000).getHours() >= 12 ? "PM" : "AM"}</p>
+                    </div>
                 <div className="scheduleIcon">{
                     item.weather[0].main === "Clouds" ?
                         (<img src='/images/whitecloud.png' width={30} />) : ("no data")

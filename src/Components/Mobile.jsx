@@ -16,7 +16,7 @@ function Mobile() {
     const currentWeatherCall = async () => {
         const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${citySearch}&appid=${apiKey}&units=metric`)
         const data = await res.json()
-        console.log("current Weather Data ==> ", data)
+        // console.log("current Weather Data ==> ", data)
         setLat(data.coord.lat)
         setLon(data.coord.lon)
         setCurrentWeatherData(data)
@@ -27,7 +27,7 @@ function Mobile() {
     const forcastDatacall = async () => {
         const res = await fetch(`https://pro.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=19077b1cae9e9a1914ed3565a69a19e7&units=metric`)
         const data = await res.json()
-        console.log("ten day future data", data)
+        // console.log("ten day future data", data)
         setFrocastdata(data)
     }
 
@@ -42,7 +42,7 @@ function Mobile() {
 
     const searchCityHandler = (e) => {
         e.preventDefault()
-        console.log("Handler Chala")
+        // console.log("Handler Chala")
         currentWeatherCall()
 
 
@@ -76,6 +76,12 @@ function Mobile() {
                                     currentWeatherData.weather && currentWeatherData.weather[0]?.main === "Snow" ?
                                     (<video autoPlay muted loop src="/videos/snow.mp4"></video >) :
                                     (<video autoPlay muted loop src="/videos/clear.mp4"></video >)
+                                        &&
+                                        currentWeatherData.weather && currentWeatherData.weather[0]?.main === "Smoke" ?
+                                        (<video autoPlay muted loop src="/videos/smoke.mp4"></video >) :
+                                        (<video autoPlay muted loop src="/videos/clear.mp4"></video >)
+
+
 
                 }
 

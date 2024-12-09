@@ -2,22 +2,12 @@ import React, { useState } from 'react'
 import "./Tendayfuturebox.css"
 
 function Tendayfuturebox({ index, item }) {
-
-    const [formatedTime, setFormatedTime] = useState()
-
-
-    // setFormatedTime(
-    //     new Date(item.dt * 1000).getHours(),
-    //     index === 0
-    //         ? "Now"
-    //         : hourTime > 12
-    //             ? `${hourTime - 12} PM`
-    //             : `${hourTime} AM`)
-
     return (
         <>
             <div className="tenDayFuturebox" >
-                <div className="FutureDay"><p>{formatedTime}</p></div>
+                <div className="FutureDay">
+                    <p>{new Date(item.dt * 1000).getHours()} {new Date(item.dt * 1000).getHours() >= 12 ? "PM" : "AM"}</p>
+                </div>
                 <div className="seasonIcon">
                     <p>{
                         item.weather[0].main === "Clouds" ?

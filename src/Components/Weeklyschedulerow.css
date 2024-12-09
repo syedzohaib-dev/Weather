@@ -47,3 +47,9 @@
 .secondP {
     font-weight: bold;
 }
+
+@media (min-width: 100px) and (max-width: 400px) {
+    .scheduleDay {
+        font-size: 0.55rem;
+    }
+}
